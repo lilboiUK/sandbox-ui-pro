@@ -1,0 +1,556 @@
+{
+  "__guid": "c8738a44-2db5-48e6-82e9-214209486029",
+  "GameObjects": [
+    {
+      "__guid": "eab0d60f-f771-424f-84c9-d0101311b140",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "7f701e70-3ce7-4ee0-9283-9830226cd286",
+          "__enabled": true,
+          "Flags": 0,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "EnablePostProcessing": true,
+          "FieldOfView": 60,
+          "FovAxis": "Horizontal",
+          "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "PostProcessAnchor": null,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "RenderTexture": null,
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "80d937ed-9271-4050-97b6-40456de36507",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "skybox",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "5197fd03-64c9-41e3-b2fb-e876136e8d8d",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "48b18965-08de-4e42-b514-144fcd4e13d7",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Input System",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.UiPro.UiInputSystem",
+          "__guid": "a837964e-236d-482f-a312-c89e49ccc459",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "5531a0de-600f-429e-9f87-bf6dd5f85cd1",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Example Mouse Enabler",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ExampleMouseEnabler",
+          "__guid": "255cf57f-1caa-4444-8b47-af76b4218330",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "ad43a433-bc7b-45d5-aede-b8eecc929fc1",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Canvas",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.UiPro.UiCanvas",
+          "__guid": "feef42d4-1a49-420d-86e8-914b2cd7ae55",
+          "__enabled": true,
+          "Flags": 0,
+          "MatchWidthOrHeight": 0.5,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "ReferenceResolution": "1920,1080",
+          "ScaleMode": "ScaleWithScreenSize"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "0109ea75-f023-460a-b36b-d39a6a8d6868",
+          "__version": 2,
+          "Flags": 0,
+          "Name": "Button",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkFlags": 0,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.UiPro.ImageNode",
+              "__guid": "35f28c6f-053b-4a5b-a8fd-f12db0185ed3",
+              "__enabled": true,
+              "Flags": 0,
+              "BorderColor": "1,1,1,1",
+              "BorderWidth": 3,
+              "CornerRadius": 50,
+              "ImagePath": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "ReceivePointerInput": true,
+              "Style": {
+                "Anchor": "CenterMiddle",
+                "Pivot": "CenterMiddle",
+                "Offset": "0,0",
+                "Size": "250,100",
+                "ChildPadding": "0,0,0,0",
+                "ClipChildren": false,
+                "StretchHorizontal": false,
+                "StretchVertical": false,
+                "CornerRadius": 50,
+                "BorderWidth": 3,
+                "BorderColor": "1,1,1,1",
+                "Texture": null,
+                "Tint": "0.2,0.2,1,1",
+                "UvScale": "1,1",
+                "UvOffset": "0,0"
+              },
+              "Tint": "0.2,0.2,1,1"
+            },
+            {
+              "__type": "Sandbox.UiPro.Button",
+              "__guid": "4dcbd16a-a9ca-4652-a30f-2d09a99b3e68",
+              "__enabled": true,
+              "Flags": 0,
+              "AffectBorderColor": false,
+              "DefaultBorderColor": "1,1,1,1",
+              "DefaultTint": "0.2,0.2,1,1",
+              "HoveredBorderColor": "0.5,0.5,0.5,1",
+              "HoveredTint": "0.13488,0.13488,1,1",
+              "OnClick": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PressedBorderColor": "0.25,0.25,0.25,1",
+              "PressedTint": "0.06047,0.06047,1,1",
+              "Target": {
+                "_type": "component",
+                "component_id": "35f28c6f-053b-4a5b-a8fd-f12db0185ed3",
+                "go": "0109ea75-f023-460a-b36b-d39a6a8d6868",
+                "component_type": "ImageNode"
+              }
+            },
+            {
+              "__type": "Sandbox.ExampleButtonController",
+              "__guid": "99825e0a-4331-44dc-8f9d-5b626b877ec3",
+              "__enabled": true,
+              "Flags": 0,
+              "ClickCount": 0,
+              "MyButton": {
+                "_type": "component",
+                "component_id": "4dcbd16a-a9ca-4652-a30f-2d09a99b3e68",
+                "go": "0109ea75-f023-460a-b36b-d39a6a8d6868",
+                "component_type": "Button"
+              },
+              "MyText": {
+                "_type": "component",
+                "component_id": "1105d9ff-17ae-4903-be31-42ebdfd051de",
+                "go": "ddfc3ece-84e5-4fda-bfb0-d5d69d7b7187",
+                "component_type": "TextNode"
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "c410ed3e-2f21-436e-98d9-50a6bce20265",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "Text",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.UiPro.TextNode",
+                  "__guid": "9563d07d-cea8-476f-9e0c-7a9d4fba38e2",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "HorizontalAlignment": "Center",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "ReceivePointerInput": false,
+                  "Style": {
+                    "Anchor": "CenterMiddle",
+                    "Pivot": "CenterMiddle",
+                    "Offset": "0,0",
+                    "Size": "100,100",
+                    "ChildPadding": "0,0,0,0",
+                    "ClipChildren": false,
+                    "StretchHorizontal": true,
+                    "StretchVertical": true,
+                    "CornerRadius": 0,
+                    "BorderWidth": 0,
+                    "BorderColor": "0,0,0,1",
+                    "Texture": null,
+                    "Tint": "1,1,1,1",
+                    "UvScale": "1,1",
+                    "UvOffset": "0,0"
+                  },
+                  "TextScope": {
+                    "Text": "Click Me",
+                    "TextColor": "1,1,1,1",
+                    "FontName": "Poppins",
+                    "FontSize": 50,
+                    "FontWeight": 400,
+                    "FontItalic": false,
+                    "FontVariantNumeric": "Normal",
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "FilterMode": "Bilinear",
+                    "FontSmooth": "Auto",
+                    "Outline": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,0,1,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,0,0,1",
+                      "Offset": "4,4"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,0,0,1",
+                      "Offset": "4,4"
+                    }
+                  },
+                  "VerticalAlignment": "Center"
+                }
+              ],
+              "Children": []
+            }
+          ]
+        },
+        {
+          "__guid": "0cdd8d3a-a136-4b7e-8578-df068c38ba73",
+          "__version": 2,
+          "Flags": 0,
+          "Name": "Image",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkFlags": 0,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.UiPro.ImageNode",
+              "__guid": "9e4b5a11-fb38-4c61-b3f3-9eaacb6a87bb",
+              "__enabled": true,
+              "Flags": 0,
+              "BorderColor": "0,0,0,1",
+              "BorderWidth": 0,
+              "CornerRadius": 20,
+              "ImagePath": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "ReceivePointerInput": false,
+              "Style": {
+                "Anchor": "BottomMiddle",
+                "Pivot": "BottomMiddle",
+                "Offset": "0,-20",
+                "Size": "500,100",
+                "ChildPadding": "0,0,0,0",
+                "ClipChildren": false,
+                "StretchHorizontal": false,
+                "StretchVertical": false,
+                "CornerRadius": 20,
+                "BorderWidth": 0,
+                "BorderColor": "0,0,0,1",
+                "Texture": null,
+                "Tint": "0,0,0,0.5",
+                "UvScale": "1,1",
+                "UvOffset": "0,0"
+              },
+              "Tint": "0,0,0,0.5"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "ddfc3ece-84e5-4fda-bfb0-d5d69d7b7187",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "Text",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.UiPro.TextNode",
+                  "__guid": "1105d9ff-17ae-4903-be31-42ebdfd051de",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "HorizontalAlignment": "Center",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "ReceivePointerInput": false,
+                  "Style": {
+                    "Anchor": "CenterMiddle",
+                    "Pivot": "CenterMiddle",
+                    "Offset": "0,0",
+                    "Size": "100,100",
+                    "ChildPadding": "0,0,0,0",
+                    "ClipChildren": false,
+                    "StretchHorizontal": true,
+                    "StretchVertical": true,
+                    "CornerRadius": 0,
+                    "BorderWidth": 0,
+                    "BorderColor": "0,0,0,1",
+                    "Texture": null,
+                    "Tint": "1,1,1,1",
+                    "UvScale": "1,1",
+                    "UvOffset": "0,0"
+                  },
+                  "TextScope": {
+                    "Text": "Clicked 0 Times",
+                    "TextColor": "1,1,1,1",
+                    "FontName": "Poppins",
+                    "FontSize": 50,
+                    "FontWeight": 400,
+                    "FontItalic": false,
+                    "FontVariantNumeric": "Normal",
+                    "LineHeight": 1,
+                    "LetterSpacing": 0,
+                    "WordSpacing": 0,
+                    "FilterMode": "Bilinear",
+                    "FontSmooth": "Auto",
+                    "Outline": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,0,1,1"
+                    },
+                    "Shadow": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,0,0,1",
+                      "Offset": "4,4"
+                    },
+                    "OutlineUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,1,0,1"
+                    },
+                    "ShadowUnder": {
+                      "Enabled": false,
+                      "Size": 4,
+                      "Color": "0,0,0,1",
+                      "Offset": "4,4"
+                    }
+                  },
+                  "VerticalAlignment": "Center"
+                }
+              ],
+              "Children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "NetworkInterpolation": true,
+    "TimeScale": 1,
+    "WantsSystemScene": true,
+    "Metadata": {},
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": false,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": "",
+      "DeferGeneration": false,
+      "CustomBounds": false
+    },
+    "GameObjectSystems": {
+      "Sandbox.SelectionSetsSystem": {
+        "Data": {
+          "SelectionSets": []
+        }
+      },
+      "Sandbox.Clutter.ClutterGridSystem": {
+        "Storage": {
+          "$blob": "95e69ab9-05d5-48a3-8355-3adc3f0885f5"
+        }
+      }
+    }
+  },
+  "ResourceVersion": 3,
+  "Title": null,
+  "Description": null,
+  "__references": [],
+  "__version": 3
+}

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Editor": {
+      "commandName": "Executable",
+      "executablePath": "../../../../../../../../../../Program Files (x86)/Steam/steamapps/common/sbox/sbox-dev.exe",
+      "commandLineArgs": "-project \u0022c:\\users\\madfr\\desktop\\code\\s\u0026box\\ui_pro\\Libraries\\lilboi.ui-pro\\uipro.sbproj\u0022"
+    }
+  }
+}

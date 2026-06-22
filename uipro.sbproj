@@ -1,0 +1,14 @@
+{
+  "Title": "UI Pro",
+  "Type": "library",
+  "Org": "lilboi",
+  "Ident": "ui-pro",
+  "Schema": 1,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Mounts": null,
+  "IsStandaloneOnly": false,
+  "Metadata": {}
+}
