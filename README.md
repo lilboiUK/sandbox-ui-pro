@@ -4,7 +4,7 @@
   <img src="https://cdn.sbox.game/org/lilboi/ui-pro/thumb/0f8639d4-2897-4418-9a07-9a8fcd92590c.png" width="200">
 </p>
 
-A screen-space UI library for Unity. It's recommended to restart the editor after installing this library.
+An easy to use custom UI library for s&box
 
 ## What's Included 👍
 
