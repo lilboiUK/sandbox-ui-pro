@@ -1,6 +1,7 @@
 # UI Pro
 
 A custom UI library for s&box
+https://sbox.game/lilboi/ui-pro
 
 ## What's Included 👍
 
