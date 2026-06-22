@@ -1,106 +1,53 @@
-# \# UI Pro
+# UI Pro
 
-# 
+A custom UI library for s&box
 
-# A screen-space UI library for Unity. It's recommended to restart the editor after installing this library.
+## What's Included 👍
 
-# 
+- Screen Space UI with Resolution Scaling
+- Image & Text Nodes
+- Borders & Rounded Corners
+- Input System
+- Buttons
+- Parent/Child Anchoring, Padding, Clipping, Stretching
 
-# \## What's Included 👍
+## What's Planned ⏰
 
-# 
+- Edit Mode Preview
+- World Space UI
+- Sliders, Checkboxes & Toggles
+- Input Fields
+- Horizontal & Vertical Layouts
+- Scroll Views
+- Proper documentation
 
-# \- Screen Space UI with Resolution Scaling
+## Getting Started 🎯
 
-# \- Image \& Text Nodes
+The fastest way to understand UI Pro is to open the included example scene. It has a working Canvas, Input System, and Button that updates a TextNode when you click it. Press play, click the button, then inspect how GameObjects and Components are wired together — that's the whole pattern.
 
-# \- Borders \& Rounded Corners
+## The Way It Works ⚙️
 
-# \- Input System
+Every UI Pro setup has the same layout.
 
-# \- Buttons
+**Canvas** — The renderer and root of your UI. Every UI Node must be a child GameObject of a Canvas.
 
-# \- Parent/Child Anchoring, Padding, Clipping, Stretching
+**Image & Text Nodes** — The visible bits. Placed as child GameObjects of a Canvas, then positioned and styled by their various properties in the inspector.
+> Note: you should only have one Image/Text Node per GameObject.
 
-# 
+**Input System** — You need only one Input System component somewhere in the scene. It reads the mouse and dispatches click/hover events. Without it, nothing is interactive.
+> Note: you must enable "Receive Pointer Input" on a Node for buttons etc. to work.
 
-# \## What's Planned ⏰
+**Behaviour — Buttons** — Sits alongside a node and reacts to pointer events. Set its Target to the node it should recolour on hover/press, and hook up its OnClick.
 
-# 
+## Creating Your Own Button 🪄
 
-# \- Edit Mode Preview
+1. Add an InputSystem Component to any GameObject (only one needed).
+2. Add a Canvas Component to another GameObject.
+3. Under the Canvas, add a child GameObject with an ImageNode Component. Give it a Size in Layout Settings.
+4. On that node, tick "Receive Pointer Input" so it can be clicked. (Nodes are non-interactive by default, so text and decoration don't eat clicks.)
+5. On the same GameObject, add a Button Component and set its Target to the ImageNode. Adjust the Default / Hovered / Pressed tints.
+6. (Optional) Subscribe to the button's OnClick event from another script to make the button do cool stuff.
 
-# \- World Space UI
+---
 
-# \- Sliders, Checkboxes \& Toggles
-
-# \- Input Fields
-
-# \- Horizontal \& Vertical Layouts
-
-# \- Scroll Views
-
-# \- Proper documentation
-
-# 
-
-# \## Getting Started 🎯
-
-# 
-
-# The fastest way to understand UI Pro is to open the included example scene. It has a working Canvas, Input System, and Button that updates a TextNode when you click it. Press play, click the button, then inspect how GameObjects and Components are wired together — that's the whole pattern.
-
-# 
-
-# \## The Way It Works ⚙️
-
-# 
-
-# Every UI Pro setup has the same layout.
-
-# 
-
-# \*\*Canvas\*\* — The renderer and root of your UI. Every UI Node must be a child GameObject of a Canvas.
-
-# 
-
-# \*\*Image \& Text Nodes\*\* — The visible bits. Placed as child GameObjects of a Canvas, then positioned and styled by their various properties in the inspector.
-
-# > Note: you should only have one Image/Text Node per GameObject.
-
-# 
-
-# \*\*Input System\*\* — You need only one Input System component somewhere in the scene. It reads the mouse and dispatches click/hover events. Without it, nothing is interactive.
-
-# > Note: you must enable "Receive Pointer Input" on a Node for buttons etc. to work.
-
-# 
-
-# \*\*Behaviour — Buttons\*\* — Sits alongside a node and reacts to pointer events. Set its Target to the node it should recolour on hover/press, and hook up its OnClick.
-
-# 
-
-# \## Creating Your Own Button 🪄
-
-# 
-
-# 1\. Add an InputSystem Component to any GameObject (only one needed).
-
-# 2\. Add a Canvas Component to another GameObject.
-
-# 3\. Under the Canvas, add a child GameObject with an ImageNode Component. Give it a Size in Layout Settings.
-
-# 4\. On that node, tick "Receive Pointer Input" so it can be clicked. (Nodes are non-interactive by default, so text and decoration don't eat clicks.)
-
-# 5\. On the same GameObject, add a Button Component and set its Target to the ImageNode. Adjust the Default / Hovered / Pressed tints.
-
-# 6\. (Optional) Subscribe to the button's OnClick event from another script to make the button do cool stuff.
-
-# 
-
-# \---
-
-# 
-
-# This is an early release built by one person. Bug reports are hugely appreciated, and if there's a widget you need that's missing, say so. Real use cases drive what gets built next.
-
+This is an early release built by one person. Bug reports are hugely appreciated, and if there's a widget you need that's missing, say so. Real use cases drive what gets built next.
